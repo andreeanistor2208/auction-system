@@ -1,0 +1,48 @@
+addadministrator "Gruia Catalin"
+addbroker "Ceadaru"
+addbroker "Leancu"
+addproduct "Inel 18K" 1956 7800 bijuterie diamant pretioasa
+addproduct "Cercei Creole Stelute" 1987 8750 bijuterie aur pretioasa
+addproduct "Bratara Copii Ursulet" 1997 200 bijuterie tinichea nepretioasa
+addproduct "Bratara Inimi My love" 1988 160 bijuterie piele nepretioasa
+addproduct "Inel Fantazzia" 1945 56000 bijuterie Smarald pretioasa
+addproduct "Pandantiv Floare" 1987 43000 bijuterie aur pretioasa
+addproduct "Inel Metiste" 1934 87500 bijuterie Topaz pretioasa
+addproduct "Masa asiatica pictata" 1912 23000 mobila "masa retractabila" lemn
+addproduct "Comoda coloniala" 1934 435000 mobila "comoda" lemn masiv
+addproduct "Masa Baroca" 1923 52000 mobila "masa sculptata" lemn masiv
+addproduct "Dulap Chapec-Hohenzolern" 1870 7200 mobila "dulap" lemn
+addproduct "Canapea Rococo cu fotolii" 1856 5600 mobila "canapea" matase in star
+addproduct "Pat Venetian" 1880 2300 mobila "pat" lemn masiv
+addproduct "Zinnia" 1987 27000 tablou "Viantty" ulei
+addproduct "Rossana" 1995 45000 tablou "Viantty" acrilic
+addproduct "Tansy" 1993 24000 tablou "Viantty" tempera
+addproduct "Flori de gradina" 1978 56000 tablou "Ileana Seralio" acrilic
+addproduct "Peisaj marin" 1980 43000 tablou "Ileana Seralio" tempera
+addproduct "Doamna cu bichon" 1987  23760 tablou "Alexandru Panatta" acrilic
+addproduct "Pictura de colectie" 1989 51500 tablou "Alexandru Panatta" tempera
+addproduct "Waterland fantasy" 1954 44700 tablou "Pantea Dorina" ulei
+showproducts
+addclient PF "Penescu Vlad" 07.06.1987 Timișoara
+addclient PJ "Trend Furniture SRL" "Craiova" SRL 7500
+addclient PF "Ivan Adrian" 30.09.1967 Pitesti
+addclient PJ "Miroslava Industrial Parc SRL" "Galati" SRL 850
+addclient PF "Stroe Octavian" 25.03.1969 Bujori
+addclient PJ "Arta Lemnului SA" "Campina" SA 800
+addclient PF "Nistor Gheorghe" 04.06.2000 Mioveni
+addclient PJ "Mobilextra SA" "Vidraru" SA 2500
+addclient PF "Vasilescu Dan" 09.03.1977 Targoviste
+addclient PJ "Nitroparc SRL" "Calarasi" SRL 6800
+addlicitatie 5 24 2
+addlicitatie 5 25 5
+addlicitatie 2 1 7
+addlicitatie 3 6 7
+client "Penescu Vlad" 24
+client "Nistor Gheorghe" 24
+client "Mobilextra SA" 24
+client "Vasilescu Dan" 24
+client "Mobilextra SA" 6
+client "Nitroparc SRL" 6
+client "Ivan Adrian" 6
+client "Mobilextra SA" 1
+showproducts

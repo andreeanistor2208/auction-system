@@ -1,0 +1,40 @@
+addadministrator "Alexandru Graur"
+addbroker "Balan"
+addbroker "Keseru"
+addproduct "Eleganta in rubiniu" 1990 6700 tablou "Anca Bulgaru" ulei
+addproduct "Parfum de roza martisor" 1995 33000 tablou "Anca Bulgaru" tempera
+addproduct "Liliac imbujorat" 1992 34000 tablou "Anca Bulgaru" ulei
+addproduct "Cosulet cu anemone" 1999 21000 tablou "Anca Bulgaru" acrilic
+addproduct "Curcubeul Viselor" 1960 78000 tablou "Mariana Oros" ulei
+addproduct "O ploaie mocaneasca" 1969 64000 tablou "Mariana Oros" acrilic
+addproduct "Jasmine" 1998 9000 tablou "Viantty" tempera
+addproduct "Zinnia" 1987 27000 tablou "Viantty" ulei
+addproduct "Rossana" 1995 45000 tablou "Viantty" acrilic
+addproduct "Tansy" 1993 24000 tablou "Viantty" tempera
+addproduct "Consola antica" 1900 3000 mobila "masa Artnouveau" lemn masiv
+addproduct "Pat cu baldachin de Bavaria Kulturhaus" 1920 43000 mobila "pat" lemn de mahon 
+addproduct "Bufet Viena" 1934 52000 mobila "dulap" lemn masiv
+addproduct "Pantofar Emeral" 1928 21000 mobila "pantofar" lemn empire intatsie
+addproduct "Comoda renastere Florentina" 1750 78000 mobila "comoda" lemn sculptat
+addproduct "Bratara Marcus" 1978 2000 bijuterie aur pretioasa
+addproduct "Bratara Tennis Deuvo" 1976 5600 bijuterie argint pretioasa
+addproduct "Inel 18K" 1956 7800 bijuterie diamant pretioasa
+addproduct "Cercei Creole Stelute" 1987 8750 bijuterie aur pretioasa
+addproduct "Bratara Copii Ursulet" 1997 200 bijuterie tinichea nepretioasa
+showproducts
+addclient PF "Costescu Mihai" 06.12.1980 Pipera
+addclient PJ "SC MSI SRL" "Calea mosilor" SRL 100
+addclient PF "Popovici Mateescu" 12.04.1987 Bucuresti
+addclient PJ "Neptun Olimp SA" "Mamaia" SA 250
+addclient PF "Ivan Adrian" 30.09.1967 Pitesti
+addclient PJ "Miroslava Industrial Parc SRL" "Galati" SRL 850
+addlicitatie 2 1 6
+addlicitatie 2 3 7
+addlicitatie 2 4 4
+addlicitatie 2 6 5
+client "Costescu Mihai" 1
+client "Neptun Olimp SA" 1
+client "Popovici Mateescu" 1
+client "Popovici Mateescu" 3
+client "Ivan Adrian" 3
+showproducts

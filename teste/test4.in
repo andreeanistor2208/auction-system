@@ -1,0 +1,47 @@
+addadministrator "Vintila Ramona"
+addbroker "Habuc"
+addbroker "Sancu"
+addproduct "O ploaie mocaneasca" 1969 64000 tablou "Mariana Oros" acrilic
+addproduct "Jasmine" 1998 9000 tablou "Viantty" tempera
+addproduct "Zinnia" 1987 27000 tablou "Viantty" ulei
+addproduct "Rossana" 1995 45000 tablou "Viantty" acrilic
+addproduct "Tansy" 1993 24000 tablou "Viantty" tempera
+addproduct "Flori de gradina" 1978 56000 tablou "Ileana Seralio" acrilic
+addproduct "Peisaj marin" 1980 43000 tablou "Ileana Seralio" tempera
+addproduct "Doamna cu bichon" 1987  23760 tablou "Alexandru Panatta" acrilic
+addproduct "Pictura de colectie" 1989 51500 tablou "Alexandru Panatta" tempera
+addproduct "Waterland fantasy" 1954 44700 tablou "Pantea Dorina" ulei
+addproduct "Masa Florentina antica" 1690 99000 mobila "masa sculptata" lemn
+addproduct "Comoda Rosse" 1865 34000 mobila "comoda cu oglinda" lemn ne-o baroc
+addproduct "Masa asiatica pictata" 1912 23000 mobila "masa retractabila" lemn
+addproduct "Comoda coloniala" 1934 435000 mobila "comoda" lemn masiv
+addproduct "Masa Baroca" 1923 52000 mobila "masa sculptata" lemn masiv
+addproduct "Pandantiv Floare" 1987 43000 bijuterie aur pretioasa
+addproduct "Inel Metiste" 1934 87500 bijuterie Topaz pretioasa
+addproduct "Colier stelute" 1967 23000 bijuterie argint pretioasa
+addproduct "inel Rubinne" 1890 76000 bijuterie opal pretioasa
+addproduct "Pandantiv Sabrini" 1987 450 bijuterie alama nepretioasa
+showproducts
+addclient PF "Nistor Gheorghe" 04.06.2000 Mioveni
+addclient PJ "Mobilextra SA" "Vidraru" SA 2500
+addclient PF "Vasilescu Dan" 09.03.1977 Targoviste
+addclient PJ "Nitroparc SRL" "Calarasi" SRL 6800
+addclient PF "Penescu Vlad" 07.06.1987 Timișoara
+addclient PJ "Trend Furniture SRL" "Craiova" SRL 7500
+addclient PF "Bogdan Nicusor" 16.07.1989 Iasi
+addclient PJ "Comodim SRL" "Valcea" SRL 6400
+addclient PF "Tanase Iulia" 03.11.1977 Breaza
+addlicitatie 5 18 6
+addlicitatie 3 19 3
+addlicitatie 2 21 4
+addlicitatie 2 22 3
+client "Nistor Gheorghe" 18
+client "Mobilextra SA" 18
+client "Nitroparc SRL" 18
+client "Tanase Iulia" 18
+client "Comodim SRL" 18
+client "Trend Furniture SRL" 22
+client "Bogdan Nicusor" 22
+client "Bogdan Nicusor" 19
+client "Mobilextra SA" 19
+showproducts

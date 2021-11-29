@@ -1,0 +1,41 @@
+addadministrator "Patrut Ioan"
+addbroker "Tabarac"
+addbroker "Maca"
+addproduct "Masa Florentina antica" 1690 99000 mobila "masa sculptata" lemn
+addproduct "Comoda Rosse" 1865 34000 mobila "comoda cu oglinda" lemn ne-o baroc
+addproduct "Masa asiatica pictata" 1912 23000 mobila "masa retractabila" lemn
+addproduct "Comoda coloniala" 1934 435000 mobila "comoda" lemn masiv
+addproduct "Masa Baroca" 1923 52000 mobila "masa sculptata" lemn masiv
+addproduct "Dulap Chapec-Hohenzolern" 1870 56000 mobila "dulap" lemn
+addproduct "Canapea Rococo cu fotolii" 1856 8700 mobila "canapea" matase in star
+addproduct "Pat Venetian" 1880 2300 mobila "pat" lemn masiv
+addproduct "Canapea Antice Louis Phillipe" 1800 54300 mobila 'canapea" broderie de Bruges
+addproduct "Dulap tip credent vanatoresc" 1876 56700 mobila "dulap" lemn masiv
+addproduct "O ploaie mocaneasca" 1969 64000 tablou "Mariana Oros" acrilic
+addproduct "Jasmine" 1998 9000 tablou "Viantty" tempera
+addproduct "Zinnia" 1987 27000 tablou "Viantty" ulei
+addproduct "Rossana" 1995 45000 tablou "Viantty" acrilic
+addproduct "Tansy" 1993 24000 tablou "Viantty" tempera
+addproduct "inel Rubinne" 1890 76000 bijuterie opal pretioasa
+addproduct "Pandantiv Sabrini" 1987 450 bijuterie alama nepretioasa
+addproduct "Colier semiluna" 1956 54600 bijuterie diamant pretioasa
+addproduct "Inel decorat" 1998 230 bijuterie aluminiu nepretioasa
+addproduct "Pandantiv cu lant" 1987 32500 bijuterie diamant pretioasa
+showproducts
+addclient PF "Bogdan Nicusor" 16.07.1989 Iasi
+addclient PJ "Comodim SRL" "Valcea" SRL 6400
+addclient PF "Tanase Iulia" 03.11.1977 Breaza
+addclient PJ "Logi Bic SRL" "Constanta" SRL 3400
+addclient PF "Stroe Octavian" 25.03.1969 Bujori
+addclient PJ "Arta Lemnului SA" "Campina" SA 800
+addlicitatie 4 12 3
+addlicitatie 4 13 4
+addlicitatie 5 15 4
+addlicitatie 2 16 2
+client "Bogdan Nicusor" 12
+client "Comodim SRL" 12
+client "Tanase Iulia" 12
+client "Logi Bic SRL" 12
+client "Stroe Octavian" 16
+client "Arta Lemnului SA" 16
+showproducts

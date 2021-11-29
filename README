@@ -1,0 +1,222 @@
+Nistor Andreea Iuliana
+Grupa 323CB
+Proiect POO
+
+import javafx.util
+
+Clase implementate:
+
+Produs 
+
+    private int mID;
+    private String mName;
+    protected double mPretVanzare;
+    protected double mPretMinim;
+    private int mAn;
+
+Clase care extind produs (tipuri de produs) :
+Bijuterie extends Produs
+
+    private String mMaterial;
+    private boolean mPretioasa;
+
+Mobila extends Produs
+
+    private String mTip;
+    private String mMaterial;
+
+Tablou extends Produs
+
+    private String mPictor;
+    private Culori mCuloare;
+
+
+Angajat
+
+    private String mName;
+    protected int mID;
+
+Tipuri de angajati:
+Administrator extends Angajat
+
+    int mProdAdaugate;
+
+Broker extends Angajat
+
+    private ArrayList<Client> mClients;
+
+
+Client
+
+  private int mID;
+    private String mNume;
+    private String mAdresa;
+    private int mNrParticipari;
+    private int mNrLicitatiiCastigate;
+
+    private int maxTablouPrice;
+    private int maxJewelPrice;
+    private int maxFurniturePrice;
+
+    private Object lock1 = new Object(); //pentru mNrLicitatiiCastigate
+
+Tipuri de clienti (clasele care extind Client):
+PersoanaFizica extends Client
+
+    private String mDataNastere;
+
+PersoanaJuridica extends Client
+
+    private Companie mType;
+    private double mCapitalSocial;
+
+
+Licitatie
+
+    private int mID;
+    private int mNrNecesar;
+    private int mNrParticipanti;
+    private int mIDProdus;
+    private int mNrPasiMaxim;
+    private boolean mPornit;
+    private int mProductType; // 1 pentru tablou
+                              // 2 pentru mobila
+                              // 3 pentru bijuterie
+    private ArrayList<Broker> mBrokers;
+
+AuctionHouse - casa de licitatii (implementeaza Singleton)
+
+private static AuctionHouse single_instance = null;
+    private ArrayList<Produs> mProducts;
+    private ArrayList<Client> mClients;
+    private ArrayList<Licitatie> mLicitatii;
+    private ArrayList<Licitatie> mLicitatiiActive;
+    private ArrayList<Broker> mBrokers;
+    private ArrayList<Administrator> mAdministrators;
+
+    private int mProductIDGen;
+    private int mBrokerIDGen;
+    private int mAdminIDGen;
+    private int mLicitatiiIDGen;
+
+    private Object lock1 = new Object(); //pentru mLicitatii
+    private Object lock2 = new Object(); // pentru mLicitatiiActive
+    private Object lock3 = new Object(); //pentru mProduse
+
+
+Enum:
+
+public enum Culori
+{
+    ULEI, TEMPERA, ACRILIC
+}
+
+public enum Companie {
+    SRL, SA
+}
+
+Interfete:
+
+public interface MyIteratorInterface<E>
+public interface MyListInterface<E>
+public interface Subscriber
+
+Exceptii:
+DuplicateAuctionException - exista deja o licitatie pentru produsul respectiv
+DuplicatePFException - persoana fizica se afla deja in baza de date
+DuplicatePJException - persoana juridica se afla deja in baza de date
+InvalidProductIDException - nu exista produs cu acel ID
+NoAdministratorException - nu exista administrator
+
+Design pattern:
+1. Singleton
+
+-> Implementata in AuctionHouse 
+
+2. Iterator
+
+-> Folosita in AuctionHouse, Broker, Licitatie
+
+MyIteratorInterface<E> - Interfata cu care accesez o colectie de elemente
+class MyIterator<E> implements MyIteratorInterface<E> - are metodele reset(),
+next(), currentItem(), hasNext() si remove().
+
+MyListInterface<E>
+class MyList<E> implements MyListInterface<E> - contine array - ul de elemente
+si are metoda iterator() care returneaza iteratorul.
+
+3. Factory
+
+-> Folosita pentru produse (clasa Produs si cele ce extind Produs: Bijuterie,
+Mobila, Tablou)
+
+ProdusCreator - declara metoda Factory (de tip abstract pentru a obliga
+subclasele sa implementeze propria metoda) si returneaza un obiect nou de
+tip Produs -> public abstract Produs CreateProdus
+
+BijuterieCreator
+MobilaCreator -> extends ProdusCreator
+TablouCreator
+
+4. Observer
+
+Implmenteaza relatia Licitatie(publisher) - Broker(subscriber)
+subscriber() e addBroker
+notifysubscribers() -> anunta  toti brokerii de schimbare
+update() -> in broker
+nextBid() -> in interfata Subscriber
+unsubscriber() e clearParticipants
+
+Utilizarea programului:
+
+Programul va citi o lista de comenzi, dintr-un fisier de intrare, si va executa
+comenzile rand cu rand.
+
+Daca doriti sa bagati un nume format din mai multe cuvinte despartite prin
+spatii, bagati campul de nume intre "".
+
+addproduct nume an pretminim tip
+In functie de tip:
+Pentru tablou:
+addproduct nume an pretminim tip numepictor culori
+Pentru mobila:
+addproduct nume an pretminim tip tip_mobila material
+Pentru bijuterie:
+addproduct nume an pretminim tip material pretioasa 
+//pretioasa va avea valoarea pretios/pretioasa sau orice
+//altceva nu va considera ca fiind pretioasa
+
+addbroker nume
+addadministrator nume
+addclient TIP nume data_nasterii adresa //tip poate lua doar valorie PF si PJ,
+ex este pentru PF - persoana fizica
+addclient PJ nume adresa tip_companie capitalSocial //exemplu pentru PJ -
+persoana juridica
+
+showproducts //arata produsele inventariate de casa, dar ptr care nu s-a pornit
+inca licitatia
+
+addlicitatie nr_participanti id_produs nr_pasi_maxim //adauga o licitatie care
+va porni cand va avea nr_participanti cerut
+
+//cand un client vrea sa cumpere un produs
+client nume_client id_produs
+-> pentru comanda scrisa gresit, clientul nu este inscris in licitatie
+
+Afisare la rulare:
+
+showproducts - afiseaza id-ul si numele produsului
+
+La pornirea unei licitatii, se afiseaza sub forma:
+Thread - numarul_threadului idul_licitatiei REM nr_de_pasi ramasi ::
+numele_brokerului ofera suma_licitata (client numele_clientului)
+
+Cand un produs nu este vandut:
+Thread-numarul_threadului idul_licitatiei :: Produsul nu s-a vandut
+
+Cand produsul s-a vandut:
+Thread-numarul_threadului idul_licitatiei :: numele_brokerului castiga
+licitatia cu suma_maxima (client numele_clientului)
+
+La incheierea liciatiei:
+numele_brokerului primeste comision suma_maxima de la numele_clientului

@@ -1,0 +1,72 @@
+addadministrator "Croitoru Ionut"
+addbroker "Oae"
+addbroker "Gadei"
+addproduct "Bufet Viena" 1934 2300 mobila "dulap" lemn masiv
+addproduct "Pantofar Emeral" 1928 21000 mobila "pantofar" lemn empire intatsie
+addproduct "Comoda renastere Florentina" 1750 78000 mobila "comoda" lemn sculptat
+addproduct "Masa Florentina antica" 1690 99000 mobila "masa sculptata" lemn
+addproduct "Comoda Rosse" 1865 3400 mobila "comoda cu oglinda" lemn ne-o baroc
+addproduct "Masa asiatica pictata" 1912 23000 mobila "masa retractabila" lemn
+addproduct "Comoda coloniala" 1934 435000 mobila "comoda" lemn masiv
+addproduct "Masa Baroca" 1923 52000 mobila "masa sculptata" lemn masiv
+addproduct "Dulap Chapec-Hohenzolern" 1870 3400 mobila "dulap" lemn
+addproduct "O ploaie mocaneasca" 1969 64000 tablou "Mariana Oros" acrilic
+addproduct "Jasmine" 1998 9000 tablou "Viantty" tempera
+addproduct "Zinnia" 1987 27000 tablou "Viantty" ulei
+addproduct "Rossana" 1995 2200 tablou "Viantty" acrilic
+addproduct "Tansy" 1993 24000 tablou "Viantty" tempera
+addproduct "Flori de gradina" 1978 56000 tablou "Ileana Seralio" acrilic
+addproduct "Peisaj marin" 1980 43000 tablou "Ileana Seralio" tempera
+addproduct "Doamna cu bichon" 1987  23760 tablou "Alexandru Panatta" acrilic
+addproduct "Pictura de colectie" 1989 51500 tablou "Alexandru Panatta" tempera
+addproduct "Waterland fantasy" 1954 44700 tablou "Pantea Dorina" ulei
+addproduct "Bratara Copii Ursulet" 1997 200 bijuterie tinichea nepretioasa
+addproduct "Bratara Inimi My love" 1988 160 bijuterie piele nepretioasa
+addproduct "Inel Fantazzia" 1945 56000 bijuterie Smarald pretioasa
+addproduct "Pandantiv Floare" 1987 43000 bijuterie aur pretioasa
+addproduct "Inel Metiste" 1934 87500 bijuterie Topaz pretioasa
+addproduct "Colier stelute" 1967 23000 bijuterie argint pretioasa
+showproducts
+addclient PF "Nistor Gheorghe" 04.06.2000 Mioveni
+addclient PJ "Mobilextra SA" "Vidraru" SA 2500
+addclient PF "Vasilescu Dan" 09.03.1977 Targoviste
+addclient PJ "Nitroparc SRL" "Calarasi" SRL 6800
+addclient PF "Penescu Vlad" 07.06.1987 Timișoara
+addclient PJ "Trend Furniture SRL" "Craiova" SRL 7500
+addclient PF "Bogdan Nicusor" 16.07.1989 Iasi
+addclient PJ "Comodim SRL" "Valcea" SRL 6400
+addclient PF "Tanase Iulia" 03.11.1977 Breaza
+addclient PJ "Logi Bic SRL" "Constanta" SRL 3400
+addclient PF "Stroe Octavian" 25.03.1969 Bujori
+addclient PJ "Arta Lemnului SA" "Campina" SA 800
+addlicitatie 5 18 2
+addlicitatie 3 19 3
+addlicitatie 2 21 4
+addlicitatie 6 22 5
+addlicitatie 5 24 2
+addlicitatie 5 25 5
+addlicitatie 2 1 6
+addlicitatie 2 6 5
+addlicitatie 3 7 8
+addlicitatie 4 4 3
+addlicitatie 2 9 5
+addclient PJ "Nitroparc SRL" "Calarasi" SRL 6800
+addclient PF "Penescu Vlad" 07.06.1987 Timisoara
+addclient PJ "Trend Furniture SRL" "Craiova" SRL 7500
+addclient PF "Bogdan Nicusor" 16.07.1989 Iasi
+addclient PJ "Comodim SRL" "Valcea" SRL 6400
+addclient PJ "Miroslava Industrial Parc SRL" "Galati" SRL 850
+client "Penescu Vlad" 1
+client "Trend Furniture SRL" 1
+client "Penescu Vlad" 6
+client "Comodim SRL" 6
+client "Penescu Vlad" 7
+client "Nitroparc SRL" 7
+client "Bogdan Nicusor" 7
+client "Penescu Vlad" 4
+client "Comodim SRL" 4
+client "Penescu Vlad" 19
+client "Trend Furniture SRL" 19
+client "Penescu Vlad" 18
+client "Nitroparc SRL" 18
+showproducts

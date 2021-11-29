@@ -1,0 +1,41 @@
+addadministrator "Ionescu Cristian"
+addbroker "Peca"
+addbroker "Saba"
+addproduct "Bratara Inimi My love" 1988 160 bijuterie piele nepretioasa
+addproduct "Inel Fantazzia" 1945 56000 bijuterie Smarald pretioasa
+addproduct "Pandantiv Floare" 1987 43000 bijuterie aur pretioasa
+addproduct "Inel Metiste" 1934 87500 bijuterie Topaz pretioasa
+addproduct "Colier stelute" 1967 23000 bijuterie argint pretioasa
+addproduct "inel Rubinne" 1890 76000 bijuterie opal pretioasa
+addproduct "Pandantiv Sabrini" 1987 450 bijuterie alama nepretioasa
+addproduct "Colier semiluna" 1956 54600 bijuterie diamant pretioasa
+addproduct "Inel decorat" 1998 230 bijuterie aluminiu nepretioasa
+addproduct "Pandantiv cu lant" 1987 32500 bijuterie diamant pretioasa
+addproduct "Dulap Chapec-Hohenzolern" 1870 3400 mobila "dulap" lemn
+addproduct "Canapea Rococo cu fotolii" 1856 4500 mobila "canapea" matase in star
+addproduct "Pat Venetian" 1880 2300 mobila "pat" lemn masiv
+addproduct "Canapea Antice Louis Phillipe" 1800 56000 mobila 'canapea" broderie de Bruges
+addproduct "Dulap tip credent vanatoresc" 1876 43555 mobila "dulap" lemn masiv
+addproduct "Flori de gradina" 1978 56000 tablou "Ileana Seralio" acrilic
+addproduct "Peisaj marin" 1980 43000 tablou "Ileana Seralio" tempera
+addproduct "Doamna cu bichon" 1987  23760 tablou "Alexandru Panatta" acrilic
+addproduct "Pictura de colectie" 1989 51500 tablou "Alexandru Panatta" tempera
+addproduct "Waterland fantasy" 1954 44700 tablou "Pantea Dorina" ulei
+showproducts
+addclient PF "Nistor Gheorghe" 04.06.2000 Mioveni
+addclient PJ "Mobilextra SA" "Vidraru" SA 2500
+addclient PF "Vasilescu Dan" 09.03.1977 Targoviste
+addclient PJ "Nitroparc SRL" "Calarasi" SRL 6800
+addclient PF "Penescu Vlad" 07.06.1987 Timișoara
+addclient PJ "Trend Furniture SRL" "Craiova" SRL 7500
+addlicitatie 3 7 3
+addlicitatie 6 9 7
+addlicitatie 2 10 2
+addlicitatie 3 1 2
+client "Nistor Gheorghe" 7
+client "Vasilescu Dan" 7
+client "Penescu Vlad" 7
+client "Mobilextra SA" 1
+client "Trend Furniture SRL" 1
+client "Nitroparc SRL" 1
+showproducts
